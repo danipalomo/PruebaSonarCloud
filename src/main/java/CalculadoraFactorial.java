@@ -19,7 +19,25 @@ public class CalculadoraFactorial extends Calculadora {
             }
             return res;
         } else if (y!=0){
-            for(int i=2; i<y; i++){
+            for(int i=2; i<x; i++){
+                res*=i;
+            }
+            return res;
+        } else {
+            return 1;
+        }
+    }
+
+    private int calculateFactorial1(){
+        int res = 1;
+
+        if(x!=0 && y!=0){
+            for(int i=2; i<x; i++){
+                res*=i;
+            }
+            return res;
+        } else if (y!=0){
+            for(int i=2; i<x; i++){
                 res*=i;
             }
             return res;
